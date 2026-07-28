@@ -1,0 +1,86 @@
+@baseUrl = https://localhost:7070
+
+@productId = 5e67f8a0-9c0d-1e2f-3a4b-cdef12345678
+
+### Controller
+OPTIONS  {{baseUrl}}/api/products/
+
+
+### Controller
+HEAD  {{baseUrl}}/api/products/{{productId}}
+
+
+### Controller
+GET  {{baseUrl}}/api/products/{{productId}}?includeReviews=true
+
+### Controller
+GET  {{baseUrl}}/api/products?page=1&pageSize=12
+
+
+### Controller
+POST  {{baseUrl}}/api/products
+Content-Type: application/json
+
+{
+    "Name": "laptop",
+    "Price" : 499
+}
+
+###
+
+GET {{baseUrl}}/api/products/5e67f8a0-9c0d-1e2f-3a4b-cdef12345678
+
+### Controller
+PUT  {{baseUrl}}/api/products/4c5f0ed7-580a-4f19-aaa4-98eaf336ac03
+Content-Type: application/json
+
+{
+    "Name": "Android TV",
+    "Price" : 299
+}
+
+### Controller
+PATCH  {{baseUrl}}/api/products/{{productId}}
+Content-Type: application/json-patch+json
+
+[
+    {
+        "op": "replace",
+        "path": "/price",
+        "value" : 299
+    }
+]
+
+### Delete Request
+
+DELETE {{baseUrl}}/api/products/5e67f8a0-9c0d-1e2f-3a4b-cdef12345678
+
+
+
+### Delete Request
+
+POST {{baseUrl}}/api/products/process
+
+@JobId=757ef97a-c686-4bb8-ab7b-77e2793fdbb6
+
+###
+GET {{baseUrl}}/api/products/status/{{JobId}}
+
+
+###
+GET {{baseUrl}}/api/products/csv
+
+###Physical file 
+GET {{baseUrl}}/api/products/physical-csv-file
+
+###
+GET {{baseUrl}}/api/products/products-legacy
+
+
+###
+GET {{baseUrl}}/api/products/temp-products
+
+
+
+###
+GET {{baseUrl}}/api/products/products-legacy2

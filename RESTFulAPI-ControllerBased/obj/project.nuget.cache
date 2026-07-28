@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "oA3Mf1CDpn8=",
+  "success": true,
+  "projectFilePath": "D:\\asp\\Controller\\BuildingRESTFulAPI\\BuildingRESTFulAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Moe\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\10.0.10\\microsoft.aspnetcore.jsonpatch.10.0.10.nupkg.sha512",
+    "C:\\Users\\Moe\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\10.0.10\\microsoft.aspnetcore.mvc.newtonsoftjson.10.0.10.nupkg.sha512",
+    "C:\\Users\\Moe\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Moe\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
