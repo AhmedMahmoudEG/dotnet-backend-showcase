@@ -1,0 +1,105 @@
+@baseUrl = https://localhost:7070
+@productId = c95cce37-eb21-46e4-acc4-fa52c68a5d36
+
+### OPTIONS
+OPTIONS {{baseUrl}}/api/products
+
+###
+
+### HEAD Product
+HEAD {{baseUrl}}/api/products/{{productId}}
+
+###
+
+### Get Product By Id
+GET {{baseUrl}}/api/products/{{productId}}?includeReviews=false
+
+###
+
+### Get Paged Products
+GET {{baseUrl}}/api/products?page=1&pageSize=12
+
+###
+
+### Create Product
+POST {{baseUrl}}/api/products
+Content-Type: application/json
+
+{
+    "name": "Laptop",
+    "price": 499
+}
+
+###
+
+### Update Product (PUT)
+PUT {{baseUrl}}/api/products/{{productId}}
+Content-Type: application/json
+
+{
+    "name": "Gaming Laptop",
+    "price": 999
+}
+
+###
+
+### Patch Product
+PATCH {{baseUrl}}/api/products/{{productId}}
+Content-Type: application/json-patch+json
+
+[
+    {
+        "op": "replace",
+        "path": "/price",
+        "value": 299
+    }
+]
+
+###
+
+### Delete Product
+DELETE {{baseUrl}}/api/products/{{productId}}
+
+###
+
+### Start Background Process
+POST {{baseUrl}}/api/products/process
+
+> {%
+client.global.set("jobId", response.body.jobId);
+%}
+
+###
+@jobId = 7e6216c3-2c68-478c-be5c-7216e3c06b59
+### Check Processing Status
+GET {{baseUrl}}/api/products/status/{{jobId}}
+
+###
+
+### Download CSV
+GET {{baseUrl}}/api/products/products-csv
+
+###
+
+### Download Physical CSV File
+GET {{baseUrl}}/api/products/physical-file
+
+###
+
+### Temporary Redirect
+GET {{baseUrl}}/api/products/redirect
+
+###
+
+### Temporary Products Endpoint
+GET {{baseUrl}}/api/products/temp-products
+
+###
+
+### Permanent Redirect
+GET {{baseUrl}}/api/products/permanent-redirect
+
+###
+
+### Products Catalog
+GET {{baseUrl}}/api/products/products-catalog
