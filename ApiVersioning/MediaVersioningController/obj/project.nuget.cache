@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "M+67seHtpik=",
+  "success": true,
+  "projectFilePath": "D:\\asp\\ApiVersioning\\MediaVersioningController\\MediaVersioningController.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Moe\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

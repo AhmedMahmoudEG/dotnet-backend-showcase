@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "UrlQueryStringVersioingMinimal/1.0.0": {
+        "dependencies": {
+          "Asp.Versioning.Http": "10.0.1"
+        },
+        "runtime": {
+          "UrlQueryStringVersioingMinimal.dll": {}
+        }
+      },
+      "Asp.Versioning.Abstractions/10.1.0": {
+        "runtime": {
+          "lib/net10.0/Asp.Versioning.Abstractions.dll": {
+            "assemblyVersion": "10.1.0.0",
+            "fileVersion": "10.1.9707.2725"
+          }
+        }
+      },
+      "Asp.Versioning.Http/10.0.1": {
+        "dependencies": {
+          "Asp.Versioning.Abstractions": "10.1.0"
+        },
+        "runtime": {
+          "lib/net10.0/Asp.Versioning.Http.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.9707.2734"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UrlQueryStringVersioingMinimal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Asp.Versioning.Abstractions/10.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RwdgC5O0baZ4pt30pAKKPQHq2CV4unBKA4HWoTeu7NY9ZwXM0dWYGf1Ipc5GK0eFBe9cMeqz4pGpPncMz4/ZNQ==",
+      "path": "asp.versioning.abstractions/10.1.0",
+      "hashPath": "asp.versioning.abstractions.10.1.0.nupkg.sha512"
+    },
+    "Asp.Versioning.Http/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g0ayV/9ho3tGgooC6eF5p1063I1WzlxFJDYQrigcGnW+mLvui6eXrcW5hzTHhQREroUR3ZwXQrIN2SAIoi+KDw==",
+      "path": "asp.versioning.http/10.0.1",
+      "hashPath": "asp.versioning.http.10.0.1.nupkg.sha512"
+    }
+  }
+}

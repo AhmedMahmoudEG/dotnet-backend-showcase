@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "B+vw0BlE1fk=",
+  "success": true,
+  "projectFilePath": "D:\\asp\\ApiVersioning\\HeaderVersioningController\\HeaderVersioningController.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Moe\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
